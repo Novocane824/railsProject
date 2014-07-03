@@ -23,6 +23,7 @@ feature 'convert search' do
       click_on 'GO'
     end
     expect(current_path).to eq('/result')
+    expect(page).to have_content('Result')
   end
 
 end

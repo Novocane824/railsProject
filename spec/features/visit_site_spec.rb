@@ -13,10 +13,6 @@ feature 'visit the site' do
     visit '/terms'
     expect(page).to have_content 'Terms'
   end
-  scenario 'SUP!' do
-    visit '/'
-    expect(page).to have_content 'SUP!'
-  end
   scenario 'Contact' do
     visit '/contact'
     expect(page).to have_content 'Contact'
