@@ -1,3 +1,41 @@
 <h1>Hi, There!</h1>
 <h1>SUP!</h1>
 
+<div id="slider" class="carouselslide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#slider" data-slide-to="0" class="active"></li>
+    <li data-target="#slider" data-slide-to="1" class="active"></li>
+    <li data-target="#slider" data-slide-to="2" class="active"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item">
+      <img data-src="holder.js/1140x500/auto/#777:#555/text:First slide" alt="First slide" src="http://i.imgur.com/27V0dXZ.jpg">
+    </div>
+    <div class="item active">
+      <img data-src="holder.js/1140x500/auto/#666:#444/text:Second slide" alt="Second slide" src="http://i.imgur.com/vyt0i09.jpg">
+    </div>
+    <div class="item active">
+      <img data-src="holder.js/1140x500/auto/#555:#333/text:Third slide" alt="Third slide" src="http://imgur.com/yKSKzkQ.jpg">
+    </div>
+  </div>
+  <a class="leftcarousel" href="#slider" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="rightcarousel" href="#slider" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+
+<form id='criterea' action='/result' method='post'>
+  <input type="text" name="location" placeholder="Location" />
+  <input type="text" name="time" placeholder="Time"/>
+  <input type="text" name="date" placeholder="Date"/>
+  <input type="submit" value="GO"/>
+</form>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete (success)</span></div>
+</div>
+
+

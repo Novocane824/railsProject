@@ -26,9 +26,18 @@
           <li><a href="/terms">Terms</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+          <li class="active" role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+        </ul>
       </div><!--/.nav-collapse -->
     </div>
   </div>
+
+
 
   <div class="container">
 
@@ -44,6 +53,6 @@
 
   </div>
 
-<%= render partial: "layouts/messages" %>
+<%= flash_noty_script_tag %>
 </body>
 </html>
