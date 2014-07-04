@@ -3,7 +3,7 @@ require 'rails_helper'
 feature 'convert search' do
   scenario 'Search criterea' do
     visit '/'
-    expect(find('#criterea')).to have_button('GO')
+    expect(find('#criterea')).to have_button('Go')
   end
 
   scenario 'Search progressbar' do
@@ -14,13 +14,13 @@ feature 'convert search' do
     visit '/'
     expect(find('#slider')).to have_css('.carousel-inner')
   end
-  scenario 'Search Result'do
+  scenario 'Search result'do
     visit '/'
     within('#criterea') do
       fill_in 'location', :with => "central"
       fill_in 'time', :with => "now"
       fill_in 'date', :with => "today"
-      click_on 'GO'
+      click_on 'Go'
     end
     expect(current_path).to eq('/result')
     expect(page).to have_content('Result')

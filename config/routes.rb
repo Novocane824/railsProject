@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   get 'terms'   => 'site#terms'
   get 'contact' => 'site#contact'
 
-  post 'result' => 'url#create'
-  get  'result' => 'url#index'
+  post 'result' => 'request#create'
+  get  'result' => 'request#index'
 end
